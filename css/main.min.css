@@ -3136,6 +3136,7 @@ b,strong
 	text-align: center;
 	width: 100%;
 }
+
 .block img
 {
 	height: 60px;
@@ -3180,7 +3181,7 @@ b,strong
 	font-weight: 600;
 	height: 100%;
 	line-height: 70px;
-	margin-top: 240px;
+	margin-top: 200px;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -3860,6 +3861,37 @@ i.fa+input
 }
 @media (max-width:1199.98px)
 {
+	.back{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+	}
+	.carousel-inner span .eeeeee1{
+		    position: absolute;
+    top: -20%;
+    left: 50%;
+    margin-left: -160px;
+	}
+	.sag {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    margin-left: -340px;
+	}
+	.carousel-inner span label {
+		margin: 0;
+	}
+	.label_list{
+		position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 50%;
+    margin-left: -120px;
+	}
+	.carousel-inner {
+     position: static !important; 
+ }
 	.acc-body {
     width: 240px;
     text-align: center;
@@ -3925,6 +3957,12 @@ i.fa+input
 }
 @media (max-width:991.98px)
 { 
+	.carousel-indicators{
+		display: none !important;
+	}
+	.label_list{
+    top: -10%;
+	}
 	.hig{
 	    margin-top: -340px !important;
 	}
@@ -4057,6 +4095,24 @@ i.fa+input
 }
 @media (max-width:767.98px)
 {
+
+	.sag{
+		top: -10%;
+	}
+	.carousel-inner span .eeeeee1{
+   top: 30%;
+    font-size: 30px;
+    margin-left: -199px;
+	}
+	.label_list{
+		    top: 72%;
+	}
+	.carousel-inner span label input{
+		      background: rgba(0, 175, 245, 0.52);
+	}
+	.block1 h3{
+		margin-top: 220px;
+	}
 	.acc-body {
     font-size: 12.5px;
 }
@@ -4148,6 +4204,18 @@ margin-bottom: 300px;
 }
 @media (max-width:575.98px)
 {
+	.label_list .btn12{
+		 margin: auto !important;
+    text-align: center !important;
+    margin-left: 160px !important;
+	}
+	
+	.label_list .btn12 a{
+		    font-size: 17px !important;
+	}
+	.label_list{
+		top: 63%;
+	}
 	.acc-head li {
     display: flex;
 }
@@ -4159,7 +4227,11 @@ margin-bottom: 300px;
     align-items: center;
 }
 	.top-text h2 {
-    text-align: center;
+        text-align: center;
+    margin-top: 12px;
+    font-size: 23px;
+    margin: auto;
+    margin-left: 30px;
     margin-top: 12px;
 }
 
@@ -4234,12 +4306,15 @@ font-size: 15px;
 	.carousel-inner span a {
     color: #fff;
     padding: 17px 10px;
-    font-size: 24px;
+    font-size: 25px;
     text-decoration: none;
+    margin: auto;
+    top: 0%;
+    margin-left: -180px;
 }
 .block1 h3 {
     font-size: 17px;
-    margin-top: -200px;
+    margin-top: 100px;
 }
 
 .block4 h2 {
@@ -4259,4 +4334,17 @@ margin-bottom: 300px;
     font-size: 12px;
     padding: 0;
 
+}
+
+@media (max-width:440px)
+{
+.label_list{
+		top: 48%;
+	}
+		
+		.block1 h3 {
+    font-size: 17px;
+    margin-top: 40px;
+}
+	
 }
