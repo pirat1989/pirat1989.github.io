@@ -1,0 +1,672 @@
+
+/*---main{
+	    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+	display: block;
+}
+
+.inner{
+	    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h1{
+	    text-align: center;
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+main .main_content{
+	    width: 100%;
+}
+
+.main_content{
+	font-size: 16px;
+}
+
+.park_menu, .price_menu{
+	    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fixed_table, .fixed_table2{
+	    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+}
+
+.fixed_table, .fixed_table2{
+	    display: block;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+}
+
+.prices_data{
+	    width: 100%;
+    overflow: hidden;
+}
+
+.prices_data>div{
+	display: none;
+}
+
+.data_price_aero{
+	    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.fadeInRight{
+	    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.animated{
+	    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.data_price_aero .head{
+	    display: table-header-group;
+}
+
+.data_price_aero .head .currency{
+	    color: #333333;
+    vertical-align: top;
+}
+
+.data_price_aero .row .to, .data_price_aero .row .to a, .data_price_aero .head .currency{
+	    color: #666666 !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.data_price_aero .head>div{
+	    line-height: 1;
+}
+
+.data_price_aero .head>div, .data_price_aero .row>div{
+	    display: table-cell;
+    padding: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.data_price_aero .currency{
+	    width: 260px;
+}
+
+.data_price_aero .head .car_type{
+	    vertical-align: top;
+}
+
+.data_price_aero .row .car_type, .data_price_aero .head .car_type{
+	    font-weight: normal;
+    color: #333333;
+    font-size: 18px;
+    font-family: "PTSans-NarrowBold",Arial Narrow, Tahoma,Impact, Arial, sans-serif;
+    border-top: 0;
+    border-bottom: 0;
+    text-transform: uppercase;
+}
+
+.data_price_aero .head>div{
+	    line-height: 1;
+}
+
+.data_price_aero .head>div, .data_price_aero .row>div{
+	    display: table-cell;
+    padding: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.data_price_aero .row{
+	    display: table-row;
+}
+
+.data_price_aero .row .to:first-child{
+	    border-top: 0;
+}
+
+.data_price_aero .row .to{
+	    border-left: 0;
+}
+
+.data_price_aero .row .to, .data_price_aero .row .to a, .data_price_aero .head .currency{
+	    color: #666666 !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.data_price_aero .row>div{
+	    border: 1px solid #f7f7f7;
+}
+
+.data_price_aero .head>div, .data_price_aero .row>div{
+	    display: table-cell;
+    padding: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}--*/
+
+@media screen and (max-width: 980px) {
+    body, html {
+        min-width: 980px;
+    }
+    .inner {
+        width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .calc {
+        width: 345px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body, html, .layout {
+        width: 100%;
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+    .inner {
+        width: 100%;
+        min-width: 320px;
+    }
+    header {
+        height: 63px;
+    }
+    header .logo img {
+        margin-left: 5px;
+        display: block;
+        width: 133px;
+        height: 40px;
+    }
+    .temp {
+        display: none;
+    }
+    header .shadow {
+        height: 58px;
+    }
+
+    .mobile_menu_link {
+        display: block;
+        float: right;
+        font-size: 24px;
+        margin-top: 5px;
+        padding: 10px;
+        z-index: 9;
+    }
+    .mobile_menu_link:before {
+        z-index: 9;
+        position: relative;
+        padding: 10px;
+    }
+    .contact_mobile_block {
+        display: block;
+    }
+    .content_nav-mobile-open {
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -moz-transform: translate3d(-230px, 0, 0);
+        -ms-transform: translate3d(-230px, 0, 0);
+        -webkit-transform: translate3d(-230px, 0, 0);
+        transform: translate3d(-230px, 0, 0);
+    }
+    .content_nav-mobile-close {
+        z-index: 900;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        -moz-transform: translate3d(0px, 0, 0);
+        -ms-transform: translate3d(0px, 0, 0);
+        -webkit-transform: translate3d(0px, 0, 0);
+        transform: translate3d(0px, 0, 0);
+    }
+    .nav_top1 {
+        display: none;
+    }
+    .nav_top {
+        z-index: 1;
+        height: auto;
+        top: 0;
+        width: 230px;
+        margin-left: 230px;
+        position: absolute;
+        right: 0;
+        background: #e0e0e0 url("../images/bg_header.jpg");
+    }
+
+    .nav_top:after {
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        left: -1px;
+        top: 0;
+        box-shadow: 2px 0 14px 1px #333333;
+        content: ' ';
+    }
+    .nav_top li:nth-child(even) div:after{
+        display: none;
+    }
+    .calc {
+        position: relative;
+        float: none;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .calc .form .head {
+        font-size: 14px;
+    }
+
+    .calc .form label {
+        font-size: 12px;
+    }
+    .slaider {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    section.home_main .inner {
+        height: 834px;
+    }
+    .slaider .photos {
+        width: auto;
+        margin-left: 0;
+    }
+    .slaider .nav {
+        height: 0;
+    }
+    .slaider .nav li{
+        display: none;
+        position: absolute;
+    }
+    .slaider .nav li.active{
+        display: block;
+        background: none;
+        border: 0;
+        text-shadow: 0 1px 0 #ffffff;
+    }
+    .slaider .nav li.active:after{
+        display: none;
+    }
+    .slaider .photos .price{
+        padding-left: 5px;
+    }
+    .slaider .photos .go {
+        margin-right: 0;
+        margin-left: 10px;
+        float: left;
+    }
+    .home_main .inner {
+        padding-top: 20px;
+    }
+    .yellow_line {
+        height: 55px;
+        padding: 0;
+    }
+    .yellow_line:before {
+        bottom: -22px;
+        border: 11px solid;
+        border-color:   #f5bc01 transparent   transparent #f5bc01 ;
+    }
+
+    .yellow_line .slogan {
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: 55px;
+        line-height: 55px;
+    }
+    .contacts {
+        float: none;
+
+    }
+    .contact_form_link {
+        text-align: center;
+    }
+    .phones {
+        float: none;
+        height: auto;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .phones:last-child {
+        margin-top: 5px;
+    }
+    .phones div, .phones a {
+        line-height: 130%;
+    }
+
+    #contact_form_pop input {
+        width: auto;
+        padding: 0;
+        text-align: center;
+    }
+    .hide_on_mobile {
+        display: none;
+    }
+
+    .car_types .list {
+        height: auto;
+        display: inherit;
+    }
+
+    .car_types .yellow_line {
+        padding-left: 10px;
+    }
+
+    .car_types {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .car_types .controls div {
+        display: inline-block;
+        font-size: 30px;
+        vertical-align: middle;
+    }
+    .car_types .controls{
+        line-height: 46px;
+    }
+    .car_types .controls .round {
+        top:0;
+    }
+    .car_types .controls div:last-child {
+        margin-left: 5px;
+    }
+    .car_types .controls div:first-child {
+        margin-right: 5px;
+    }
+    .data_price_aero .row .car_type, .data_price_aero .head .car_type {
+        white-space: nowrap;
+    }
+    section.adv .list {
+        display:block;
+        height: 175px;
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section.adv .list .item {
+        margin: 0;
+        height: 175px;
+        width: 50%;
+        -webkit-flex: inherit;
+        -ms-flex: inherit;
+        flex: inherit;
+        float: left;
+    }
+    section.adv .bx-controls-direction {
+        display: none;
+    }
+    .page_content .text {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page_content .content2 {
+        margin-top: 30px;
+        display: inherit;
+    }
+
+    .promo_slaider {
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+    .promo_slaider2 {
+        width: 100%;
+        height: 223px;
+    }
+
+    .home_cc .dop_info {
+        margin-top: 30px;
+    }
+
+    .promo_slaider .item img {
+        width: 320px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+    }
+    .promo_slaider:after {
+        display: none;
+    }
+
+    .home_news .list {
+        display: inherit;
+    }
+    .home_news .list>div {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home_cc {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        height: 250px;
+    }
+    .bottom_menu li {
+        line-height: 22px;
+    }
+
+    footer .copy {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+
+    footer .logo {
+        margin-top: 30px;
+        float: none;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+    footer .logo .title {
+        margin-top: 0;
+        font-size: 14px;
+    }
+    footer .logo div, footer a{
+        display: inline-block !important;
+        float: none !important;
+    }
+    #jivo_top_wrap {
+        display: none;
+    }
+    .home_news_block .news {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page_content .inner {
+        display: inherit;
+    }
+    .page_content aside.right, .under_footer .right {
+        margin-left: 0;
+    }
+    .page_content .right .data {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page_content .o_content .next {
+        cursor: inherit;
+        margin-top: 0;
+    }
+    .car_types .img div {
+        width: 100%;
+    }
+    main .inner>div {
+        display: inherit;
+    }
+    main aside >div, main .main_content{
+        width: 96%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .not_home_layout aside, .not_home_layout .slaider_calc{
+        display: none;
+    }
+    .not_home_layout section.home_main .inner, .c_layout section.home_main .inner{
+        height: 230px;
+    }
+    .c_layout  .slaider_calc{
+        display: none;
+    }
+    .park_menu>div, .price_menu>div {
+        padding-top: 10px;
+    }
+    #grid figure, #grid .row4 {
+        width: 50%;
+    }
+    #grid figure .data {
+        width: 96%;
+    }
+    #grid figure .data .img {
+        width: 100%;
+        background-size: cover !important;
+    }
+    .top_menu li {
+        width:50%;
+    }
+
+    .top_menu li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("../images/menu_sep2.png") top center no-repeat;
+        width: 100%;
+        height: 2px;
+        z-index: 10;
+    }
+    .data_price_aero {
+        table-layout: fixed;
+    }
+
+    .data_price_aero .currency, .data_price_aero .row .to {
+        width: auto;
+    }
+    .data_price_aero .head .img {
+        height: 56px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 56px;
+    }
+    .data_price_aero .head .car_type .title {
+        font-size: 12px;
+    }
+    .data_price_aero .row .to, .data_price_aero .head .currency {
+        font-size: 12px;
+    }
+    .data_price_aero .row .to {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .data_price_aero .head .currency i {
+        margin-right: 0;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+    }
+    .data_price_aero .head .currency i:before {
+        line-height:25px;
+    }
+
+    .aero_table {
+        table-layout: fixed;
+    }
+    .data_price_aero .row .car_type, .data_price_aero .head .car_type {
+        font-size: 14px;
+    }
+    .o_content.rew .rew2{
+        height: auto;
+    }
+
+    .aero_table td, .aero_table th {
+        font-size: 14px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .park_menu>div, .price_menu>div {
+        font-size: 18px;
+    }
+
+    .data_price_aero .head>div, .data_price_aero .row>div {
+        padding: 2px;
+    }
+    .data_price_aero .head>div, .data_price_aero .row>div {
+        height: 30px;
+        line-height: 30px;
+    }
+    #grid figure .line>div {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .data_price_aero .row .car_type i {
+        font-size: 12px;
+    }
+    #grid figure .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .crimea_news {
+        display: none;
+    }
+   .contact_mobile_block .contact_form_link,.contact_mobile_block .contact_phones_on_line {
+        display: block;
+    }
+
+    .nav_top_bottom {
+        display: block;
+        height: 100%;
+    }
+
+    .yellow_line .contact_form_link,.yellow_line  .contact_phones_on_line {
+        display: none;
+    }
+}
