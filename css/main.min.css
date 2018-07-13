@@ -4083,6 +4083,11 @@ text-transform: uppercase;
 }
 @media (max-width:991.98px)
 { 
+	.boby1{
+		    font-size: 12px;
+    padding: 0px;
+    text-transform: uppercase;
+	}
 
 	.car{
 		font-size: 16px;
@@ -4257,7 +4262,7 @@ text-transform: uppercase;
     margin-left: -199px;
 	}
 	.label_list{
-		    top: 72%;
+		    top: 80%;
 	}
 	.carousel-inner span label input{
 		      background: rgba(0, 175, 245, 0.52);
@@ -4558,12 +4563,12 @@ margin-bottom: 300px;
 	}
 
 .label_list{
-		top: 48%;
+		top: 56%;
 	}
 		
 		.block1 h3 {
     font-size: 17px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 	
 }
