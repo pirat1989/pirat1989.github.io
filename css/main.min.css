@@ -4291,9 +4291,9 @@ text-transform: uppercase;
     text-align: center;
 }
 	.rightblock a {
-    font-size: 15px;
+      font-size: 15px;
     text-align: center;
-    margin-left: 170px;
+    margin-left: 136px;
 }
 	.rightblock p {
     text-align: center;
@@ -4303,10 +4303,14 @@ text-transform: uppercase;
     margin-top: 12px;
 }
 	.footer-right h4 {
-    text-align: center;
+        text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 	.footer-left h4 {
     text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
 }
 	.footer a {
     text-align: center;
@@ -4427,11 +4431,11 @@ width: 30px;
 	}
 
 	.rightblock a {
-    font-size: 15px;
+       font-size: 15px;
     text-align: center;
     position: absolute;
     left: 50%;
-    margin-left: -70px;
+    margin-left: -100px;
 }
 	.footer {
     margin-top: -290px;
