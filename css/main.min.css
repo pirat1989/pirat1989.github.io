@@ -4403,12 +4403,12 @@ width: 30px;
 	
 	.label_list .btn12 a{
 		    font-size: 17px !important;
-		        position: absolute;
+    position: absolute;
     /* margin-left: 12px; */
     left: 50%;
     margin-left: -135px;
-    height: 60px;
-    line-height: 2;
+    height: 40px;
+    line-height: 1;
     top: 230px;
 	}
 	.label_list{
