@@ -214,7 +214,10 @@ svg:not(:root)
 {
 	overflow: hidden;
 }
-t
+table
+{
+	border-collapse: collapse;
+}
 caption
 {
 	caption-side: bottom;
@@ -223,7 +226,10 @@ caption
 	padding-top: .75rem;
 	text-align: left;
 }
-
+th
+{
+	text-align: inherit;
+}
 label
 {
 	display: inline-block;
@@ -3855,16 +3861,129 @@ i.fa+input
 }
 
 
+/*--- новая таблица --*/
 
 
-.table{
-width: 100px;
+.container{
+	max-width: 800px;
+}
+
+.summ {
+	align-items: center;
+	border: 5px solid rgba(126, 148, 255, 0.75);;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 50px #080707;
+
+
+}
+
+.summ1{
+	     margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    color: #087182;
+    border: 3px solid;
+    border-radius: 10px;
+    background: #fbfbfb;
+    box-shadow: 0 0 50px #464343;
+}
+.car{
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 900;
+    color: #66d25a;
+    text-align: center;
+}
+
+.car1{
+    width: 100%;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid;
+     color: #66d25a;
+    text-align: center;
+}
+
+.boby{
+	font-size: 20px;
+padding: 10px;
+font-weight: 900;
+color: green;
+box-shadow: 0 0 50px #7279ce
+}
+.boby1{
+	font-size: 16px;
+padding: 10px;
+text-transform: uppercase;
+}
+
+.boby{
+    padding: 15px;
+    border-left: 5px solid #61677f;
+    border-radius: 6px;
+    border-right: 5px solid #7279ce;
 }
 
 
-table{
-width: 100px;
+.summ:nth-child(1) {
+    background: #666; 
+    color: #fff; 
+   ;
 }
+
+.summ:nth-child(2n) {
+    background: rgba(126, 148, 255, 0.75); 
+    color: #fff; 
+}
+
+
+.summ1 img{
+	width: 75px;
+}
+
+ .block3 input::placeholder {
+  color: green;
+   } 
+
+.boton{
+	color: red;
+	margin-bottom: 5px;
+	    border-radius: 10px;
+    background: #abd447;
+    outline: none;
+}
+
+.forma{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#poisk {
+	color: red;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+
+.arena_word{
+	    border: navajowhite;
+    padding: 6px;
+    border-radius: 30px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    background: #7e85dc;
+}
+
+
+
+
+/*--конец новой таблицы --*/
+
+
 
 @media (max-width:1199.98px)
 {
@@ -3964,6 +4083,10 @@ width: 100px;
 }
 @media (max-width:991.98px)
 { 
+
+	.car{
+		font-size: 16px;
+	}
 	.carousel-indicators{
 		display: none !important;
 	}
@@ -4102,6 +4225,28 @@ width: 100px;
 }
 @media (max-width:767.98px)
 {
+	.boby1{
+		    font-size: 14px;
+    padding: 3px;
+    text-transform: uppercase;
+	}
+
+	.boby{
+    padding: 22px 1px;
+    font-size: 14px;
+	}
+	.summ1 img{
+		width: 38px;
+	}
+
+.car{
+	font-size: 12px;
+	padding: 0;
+}
+
+.car1{
+	font-size: 13px;
+}
 
 	.sag{
 		top: -10%;
@@ -4211,6 +4356,36 @@ margin-bottom: 300px;
 }
 @media (max-width:575.98px)
 {
+
+	.boby1{
+		font-size: 10px;
+	}
+
+	.boby{
+		    font-size: 12px;
+		    border: none;
+		    padding: 0;
+	}
+
+	.summ1 img{
+width: 30px;
+	}
+
+
+.car{
+	font-size: 10px;
+	    margin-left: -7px;
+
+}
+
+	.car1{
+    font-size: 10px;
+    padding: 10px 6px;
+    border-left: 1px solid;
+    text-align: center;
+    border-radius: 0;
+	}
+
 	.label_list .btn12{
 		 margin: auto !important;
     text-align: center !important;
