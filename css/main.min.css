@@ -3996,7 +3996,7 @@ text-transform: uppercase;
 		    position: absolute;
     top: -20%;
     left: 50%;
-    margin-left: -160px;
+    margin-left: -350px;
 	}
 	.sag {
     position: absolute;
@@ -4357,15 +4357,19 @@ margin-bottom: 300px;
 @media (max-width:575.98px)
 {
 
+.summ{
+	justify-content: space-between;
+}
 	.boby1{
-		font-size: 8px;
+	    font-size: 7px;
+    margin-left: -11px;
 	}
 
 	.boby{
-		    font-size: 12px;
-		    border: none;
-		        box-shadow: none;
-		   
+		       font-size: 12px;
+    border: none;
+    margin-left: -16px;
+    box-shadow: none;
 	}
 
 	.summ1 img{
@@ -4415,7 +4419,7 @@ width: 30px;
     font-size: 23px;
     margin: auto;
     margin-left: 30px;
-    margin-top: 12px;
+    margin-top: 52px;
 }
 
 	.cup{
@@ -4470,13 +4474,25 @@ font-size: 15px;
 }
 	.block
 	{
-		margin-bottom: 130px;
+	    margin: 0 auto;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    /* width: 200px; */
+    /* height: 100px; */
+    /* justify-content: center; */
+    /* margin-left: 60px; */
+    align-items: center;
 	}
 	.block a
 	{
-		font-size: 11px;
-		padding: 10px 15px;
-	}
+		    font-size: 11px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    line-height: 3.5em;
+}
 	.block img
 	{
 		display: flex;
